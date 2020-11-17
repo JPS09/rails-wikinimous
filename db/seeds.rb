@@ -8,5 +8,5 @@ require 'faker'
 #   Character.create(name: 'Luke', movie: movies.first)
 
 10.times do
-  Article.create(title: Faker::Beer.name, content:Faker::Hipster.sentence)
+  Article.create(title: Faker::Beer.name, content: Faker::Hipster.sentence)
 end
