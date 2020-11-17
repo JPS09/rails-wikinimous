@@ -15,6 +15,21 @@ class ArticlesController < ApplicationController
     @articles = Article.new(params_protect)
     @articles.save
 
+    redirect_to article_path(@articles)
+  end
+
+  def edit
+  end
+
+  def update
+    @articles.update(params_protect)
+
+    redirect_to article_path(@articles)
+  end
+
+  def destroy
+    @articles.destroy
+
     redirect_to root_path
   end
 
